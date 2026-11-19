@@ -1,0 +1,7 @@
+services:
+  backend:
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+  frontend:
+    environment:
+      - __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=.app.github.dev

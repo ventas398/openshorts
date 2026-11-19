@@ -1,0 +1,11 @@
+{
+  "name": "OpenShorts VEYLO",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": { "cpus": 2, "memory": "8gb" },
+  "forwardPorts": [5175],
+  "portsAttributes": {
+    "5175": { "label": "OpenShorts panel", "onAutoForward": "notify" },
+    "8000": { "label": "API", "onAutoForward": "silent" },
+    "3100": { "label": "Renderer", "onAutoForward": "silent" }
+  }
+}
